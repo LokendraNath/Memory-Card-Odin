@@ -1,11 +1,12 @@
-import { Sidebar } from "./components/sidebar";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-      <Sidebar />
-    </>
+    <div className="text-white">
+      <Header />
+      <Main />
+    </div>
   );
 }
 
