@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Main = () => {
   return (
-    <main className="bg-gradient-to-t from-indigo-600 to-blue-700  min-h-screen py-10">
+    <main className=" min-h-screen py-10">
       <h1 className="text-center text-lg font-semibold tracking-wider">
         Get points by clicking on an image but don't click on any more than
         once!
