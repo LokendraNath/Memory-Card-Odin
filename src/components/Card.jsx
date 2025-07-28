@@ -34,7 +34,7 @@ export const Card = () => {
         <div
           onClick={handleCardClick}
           key={poke.id}
-          className="card border-2 flex flex-col items-center w-full py-5 px-3 rounded-xl hover:scale-105 transition-transform duration-300"
+          className="card border-2 flex flex-col items-center w-full py-5 px-3 rounded-xl hover:scale-105 transition-transform duration-300 hover:shadow-[0px_0px_41px_-5px_#1f1f23]"
         >
           <img
             className="w-full object-cover mb-5"
