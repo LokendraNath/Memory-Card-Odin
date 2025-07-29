@@ -8,6 +8,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [userPicks, setUserPicks] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   function suffleCard() {
     const suffle = [...pokemon];
@@ -54,6 +55,7 @@ function App() {
             };
           })
         );
+        setIsLoading(false);
         setPokemon(pokeDetails);
       } catch (err) {
         console.error("Filled To Featch Data", err);
@@ -65,7 +67,11 @@ function App() {
   return (
     <div className="text-white bg-gradient-to-t from-indigo-600 to-blue-700 pb-5">
       <Header score={score} highScore={highScore} />
-      <Main handleCardClick={handleCardClick} pokemonData={pokemon} />
+      <Main
+        handleCardClick={handleCardClick}
+        pokemonData={pokemon}
+        isLoading={isLoading}
+      />
       <Footer />
     </div>
   );
