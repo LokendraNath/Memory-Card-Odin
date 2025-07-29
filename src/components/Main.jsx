@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const Main = () => {
+const Main = ({ handleCardClick, pokemonData }) => {
   return (
     <main className=" min-h-screen py-10">
       <h1 className="text-center text-lg font-semibold tracking-wider">
@@ -10,7 +10,7 @@ const Main = () => {
       </h1>
 
       <div className="px-30 mt-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        <Card />
+        <Card handleCardClick={handleCardClick} pokemonData={pokemonData} />
       </div>
     </main>
   );
